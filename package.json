@@ -1,0 +1,14 @@
+{
+  "name": "pfc-connector-gateway-proof",
+  "version": "0.1.0",
+  "description": "PFC Connector Gateway — reference implementation for governing MCP connector calls with a verifiable delegation chain (PFC v0.13)",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "demo": "node src/demo.ts",
+    "test": "node --test test/chain.test.ts"
+  }
+}
