@@ -1,0 +1,19 @@
+{
+  "name": "external-consumer",
+  "version": "0.1.0",
+  "description": "Minimal external consumer proving pfc-connector-gateway-proof installs and imports cleanly as a module",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "check": "node consume.ts && tsc --noEmit consume.ts --module nodenext --target es2022 --strict --skipLibCheck"
+  },
+  "dependencies": {
+    "pfc-connector-gateway-proof": "file:../.."
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
